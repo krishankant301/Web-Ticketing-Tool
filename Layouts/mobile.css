@@ -1,0 +1,12 @@
+html{
+    /* width: 250px; */
+}
+#navbar{
+    background-color:beige;
+    display:flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+.nav-items{
+    background-color: rgb(110, 152, 219);
+}7
