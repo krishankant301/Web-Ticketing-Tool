@@ -56,7 +56,6 @@ body{
 .input-box:hover{
     border: solid 1px #2081f7;
 }
-
 #form-submit{
     margin-bottom: 0.5rem;
     border-radius: 0.27rem;
@@ -67,17 +66,13 @@ body{
     color: #02295a;
     font-weight: bold;
     font-size: 1rem;
-}
-
-#form-submit:hover {
-    color: #036ff3;
+    
 }
 
 .form-anchor{
-    color: #0075fa;
+    color: #ffffff;
     text-decoration: none;
 }
-
 .form-anchor:hover{
     color: #036ff3;
 }
@@ -85,4 +80,3 @@ body{
 label {
     font-size: 1.2rem;
 }
-
