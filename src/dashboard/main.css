@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    font-variation-settings: 100;
+}
+
+.container {
+    background: linear-gradient(90deg, #75b1fc, #b0d0f5, #75b1fc);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .25rem;
+    padding: 0 .45rem;
+}
+
+.side-bar {
+    background-color: yellowgreen;
+    width: 20vw;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.upper-side-bar {
+    background-color: yellow;
+    width: 18vw;
+    height: 30%;
+}
+
+.lower-side-bar {
+    background-color: red;
+    width: 18vw;
+    height: 65%;
+}
+
+
+.main-container {
+    background-color: antiquewhite;
+    height: 96vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.tab-bar {
+    background-color: cyan;
+    width: 78vw;
+    height: 15%;
+}
+
+.kanban-canvas {
+    background-color: peru;
+    width: 78vw;
+    height: 80%;
+}
