@@ -58,7 +58,6 @@ body{
 }
 
 #form-submit{
-    margin-bottom: 0.5rem;
     border-radius: 0.27rem;
     border: none;
     background: #81b2ee;
@@ -69,15 +68,10 @@ body{
     font-size: 1rem;
 }
 
-#form-submit:hover {
-    color: #036ff3;
-}
-
 .form-anchor{
-    color: #0075fa;
+    color: #ffffff;
     text-decoration: none;
 }
-
 .form-anchor:hover{
     color: #036ff3;
 }
@@ -86,3 +80,8 @@ label {
     font-size: 1.2rem;
 }
 
+
+.btn-sec {
+    display: flex;
+    justify-content: center;
+}

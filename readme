@@ -1,0 +1,10 @@
+# fuctionality:
+ 1. Login page: password
+                a. if wrong uaername/password entered --> we will show on page -> wrong credentials 
+ 2. Registration page:
+        a. Validate the user name:
+                1. if exists in the DB or not
+                2. suggests some available usernames
+                    a. use random function
+
+        b. if the Email id already exists --> show the email id already registered!
