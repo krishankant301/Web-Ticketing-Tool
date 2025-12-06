@@ -1,0 +1,58 @@
+.container{
+    display:flex;
+    background: linear-gradient(90deg,#75b1fc,#b0d0f5,#75b1fc);
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    height: 100vh;
+}
+.card{
+    background-color: #e3f1fc;
+    border-radius: 0.75rem;
+    /* border: solid 1px green; */
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: auto;
+}
+
+body{
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  font-variation-settings:
+    "wdth" 100;
+}
+#form-head{
+    font-size: 1.75rem;
+}
+.form-div{
+    display:flex;
+    flex-direction: column;
+}
+.input-box{
+    border-radius: 0.25rem;
+    border: none;
+    margin-top: 0.25rem;
+    height:1.5rem;
+    width: 15rem;
+    font-family: "Noto Sans", sans-serif;
+}
+.input-box:hover{
+    border: solid 1px #2081f7;
+}
+#form-submit{
+    margin-bottom: 0.5rem;
+}
+.form-anchor{
+    color: #4b95e9;
+    text-decoration:none;
+}
+.form-anchor:hover{
+    color: #036ff3;
+}
