@@ -9,14 +9,55 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal-container" id="modalOverlay">
+        <div class="modal-content">
+            <h4>New Ticket</h4>
+            <form id="popUpForm">
+                <div class="form-div">
+                    <label for="ticketTitle">Title</label>
+                    <input type="text" class="input-box" name="username" id="ticketTitle" placeholder="Title">
+                </div>
+                <br>
+                <div class="form-div">
+                    <label for="ticketDescription">Description</label>
+                    <input type="text" class="input-box" name="description" id="ticketDescription" placeholder="Description">
+                </div>
+                <br>  
+                <div class="form-div">
+                    <label for="ticketBody">Body</label>
+                    <input type="text" class="input-box" name="createdBy" id="ticketBody" placeholder="Created By">
+                </div>
+                <br>
+                <div class="form-div">
+                    <label for="ticketCreator">Created By</label>
+                    <input type="text" class="input-box" name="createdBy" id="ticketCreator" placeholder="Created By">
+                </div>
+                <br>  
+                <button type="submit" id="modal-submit">Submit</button>
+            </form>
+        </div>
+    </div>
     <div class="container">
         <div class="side-bar">
             <div class="upper-side-bar"></div>
             <div class="lower-side-bar"></div>
         </div>
         <div class="main-container">
-            <div class="tab-bar"></div>
-            <div class="kanban-canvas"></div>
+            <div class="tab-bar">
+                <input type="text" name="" id="workspaceName" placeholder="Project Tracker">
+            </div>
+            <div class="kanban-canvas">
+                <div class="status">
+                    <h3>Creation  <button class="newTicket">+</button></h3>
+                    <div class="ticketHolder">Tickets</div>
+                    <button class="newTicket">New Ticket</button>
+                    
+                </div>
+                <div class="status">In Progress</div>
+                <div class="status">In Review</div>
+                <div class="status">Completed</div>
+            </div>
         </div>
 
     </div>
