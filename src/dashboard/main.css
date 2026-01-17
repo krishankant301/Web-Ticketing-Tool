@@ -57,10 +57,54 @@ body {
     background-color: cyan;
     width: 78vw;
     height: 15%;
+    display: flex;
+    align-items: center;
 }
 
 .kanban-canvas {
     background-color: peru;
     width: 78vw;
     height: 80%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.status{
+    background-color: white;
+}
+#workspaceName{
+    border: none;
+    background: transparent;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: black;
+    /* background-color: cyan; */
+}
+
+.modal-container{
+    display:none;
+}
+#modalOverlay{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0 ,0 , 0.5);
+}
+.modal-content{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+.ticketHolder{
+    padding: 0.25rem;
+}
+
+.ticket{
+    border-radius: 0.5rem;
+    background-color: #b0d0f5;
 }
