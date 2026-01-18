@@ -4,29 +4,32 @@ let modal = document.querySelector("#modalOverlay");
 let form= document.querySelector("#popUpForm");
 let formSubmit = document.querySelector("#modal-submit");
 
+let dataStorage = [];      //array
+
+let title, description, body, creator;  
+let tickObj;
+
+//creating the class
+class ticketClass {
+  constructor(title, discription, body, creator) {
+    this.title = title;
+    this.discription = discription;
+    this.body = body;
+    this.creator = creator;
+  }
+}
+
+//Modal pop-up
 newTicket.addEventListener('click', ()=>{
     modal.style.display="flex";
 });
 
-let title, description, body, creator;
-
-
-
-form.onsubmit= (e)=>{
-    e.preventDefault();
-    // console.log(1);
-    title = document.querySelector("#ticketTitle").value;
-    description = document.querySelector("#ticketDescription").value;
-    body= document.querySelector("#ticketBody").value;
-    creator = document.querySelector("#ticketCreator").value;
-    console.log(title,description,body,creator);
-    modal.style.display="none";
-
-    //creating a ticket  
+//Create Ticket 
+function createTicket(title, description, body, creator) {
     let ticket = document.createElement("div");
     ticket.classList.add("ticket"); //adding a class to the ticket div
-    let ticket_title= document.createElement("h3"); //creating a h3 element for ticket title
-    ticket_title.innerText=title; //setting the value of ticket title 
+    let ticket_title = document.createElement("h3"); //creating a h3 element for ticket title
+    ticket_title.innerText = title; //setting the value of ticket title 
     ticket.appendChild(ticket_title); //appending ticket title to the ticket
     let ticket_description = document.createElement("p");
     ticket_description.innerText="Description: "+description;
@@ -36,17 +39,50 @@ form.onsubmit= (e)=>{
     ticket.appendChild(ticket_creator);
     ticketHolder.appendChild(ticket); // adding ticket to the ticketHolder container in the HTML file.
 
+    //object creation
+    tickObj = new ticketClass(title, description, body, creator);
+}
+
+
+function saveTicket(tickObj) {
+    //ticket_arr.push(tickObj);
+    localStorage.setItem(tickObj.title, tickObj);
+
+}
+
+function loadTicket() {
+    
+    for (let i=0; i<localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+
+        const convertData = JSON.parse(value);      // convert the json data
+        dataStorage.push(convertData);
+    }
+
+    for (let i=0; i<dataStorage.length; i++) {
+        const temObj = dataStorage[i];
+        createTicket(temObj.title, temObj.description, temObj.body, temObj.creator);
+
+    }
+
+}
+
+loadTicket();
+
+form.onsubmit = (e) => {    
+    e.preventDefault();
+    // console.log(1);
+    title = document.querySelector("#ticketTitle").value;
+    description = document.querySelector("#ticketDescription").value;
+    body= document.querySelector("#ticketBody").value;
+    creator = document.querySelector("#ticketCreator").value;
+    console.log(title,description,body,creator);
+    modal.style.display="none";
+
+    createTicket(title, description, body, creator);
+
+    saveTicket(tickObj);
+
     form.reset();
 }
-// form.onsubmit = (e) => {
-//   e.preventDefault(); // Stop page from refreshing
-
-//   const value = document.getElementById('ticketTitle').value;
-//   console.log("Saving data:", value); // Handle your data creation here
-
-//   alert("Created successfully!");
-//   modal.style.display = 'none'; // Close the popup
-//   form.reset(); // Clear text for next time
-// };
-
-// console.log(title,description,body,creator);

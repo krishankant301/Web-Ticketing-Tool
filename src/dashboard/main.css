@@ -72,6 +72,7 @@ body {
 .status{
     background-color: white;
 }
+
 #workspaceName{
     border: none;
     background: transparent;
@@ -84,6 +85,7 @@ body {
 .modal-container{
     display:none;
 }
+
 #modalOverlay{
     /* display: flex; */
     align-items: center;
