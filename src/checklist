@@ -1,0 +1,12 @@
+home page
+    two cards
+    greeting(when logged in)
+    navbar
+    introduction(optional)
+    authentication
+    button to redirect to kanban canvas
+
+
+react
+    hook-usestate, useeffect, useref
+    props

@@ -8,3 +8,9 @@
                     a. use random function
 
         b. if the Email id already exists --> show the email id already registered!
+
+
+3. Kanban board ticket loading
+        a. ticket's object to be given a key to hold status of the ticket. 
+        b. 4 arrays to be made, one each for every status.
+        c. Use loop to traverse the main array of objects and push the ticket objects in the 4 arrays based on their status.

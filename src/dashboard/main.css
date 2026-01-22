@@ -110,3 +110,12 @@ body {
     border-radius: 0.5rem;
     background-color: #b0d0f5;
 }
+.dragging{
+    opacity: 50%;
+}
+.dropped{
+    background-color: burlywood;
+}
+.ticketHolder{
+    min-height: 50px;
+}
