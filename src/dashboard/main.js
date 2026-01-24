@@ -62,14 +62,14 @@ function createTicket(title, description, body, creator) {
 }
 
 
-function saveTicket(tickObj) {
-    //ticket_arr.push(tickObj);
-    // dataStorage.push(JSON.stringify(tickObj))
-    dataStorage.push(tickObj)
+// function saveTicket(tickObj) {
+//     //ticket_arr.push(tickObj);
+//     // dataStorage.push(JSON.stringify(tickObj))
+//     dataStorage.push(tickObj)
     
-    localStorage.setItem("tickets", JSON.stringify(dataStorage));
+//     localStorage.setItem("tickets", JSON.stringify(dataStorage));
 
-}
+// }
 
 function loadTicket() {
 
