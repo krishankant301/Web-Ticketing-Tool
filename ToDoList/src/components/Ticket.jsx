@@ -9,7 +9,7 @@ const Ticket = (props) => {
       <h3>Title: {props.title}</h3>
       <p>Desription: {props.description}</p>
       {/* <p>Body:</p> */}
-      <h4>Creator:{props.creator}</h4>
+      <h4>Creator: {props.creator}</h4>
     </div>
   )
 }
